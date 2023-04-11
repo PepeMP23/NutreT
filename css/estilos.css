@@ -1,0 +1,118 @@
+#logotipoNavbar{
+    height: 50px;
+}
+
+#barra{
+    background: #555555;
+    color: white;
+}
+
+.buscador{
+    width: 30vw;
+}
+
+#textoBarra a{
+    color: white;
+}
+
+#menuBusqueda{
+    margin: 2px auto;
+    position: absolute;
+    width: 600px;
+    height: 46px;
+    top: 9px;
+    background: #F2F1F1;
+    border-radius: 15px;
+}
+
+.menuHamburguesa{
+    height: 80px;
+    box-shadow: 7px 8px 20px rgba(0, 0, 0, 0.46);
+}
+
+#preguntasFrecuentes{
+    display: flexbox;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 7px 8px 20px rgba(0, 0, 0, 0.46);
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#preguntasFrecuentes h4,p{
+    margin-left: 15px;
+}
+
+#imagenNutreT{
+    width: 60px;
+    height: 60px;
+}
+
+#acordeonQA{
+    display: block;
+    border: none;
+}
+
+#botonCollapse{
+    background-color: #dcdbdb;
+    border: none;
+    border-radius: 10px;
+}
+
+#item{
+    border: none;
+}
+
+#datosNutriologos{
+    background-color: #dcdbdb;
+}
+
+.fotoUsuario{
+    width: 100%;
+    margin: 3px auto;
+}
+
+#datosNutriologos{
+    border-radius: 12px;
+    padding-top: 10px;
+}
+
+.sucursal{
+    font-weight: 800;
+}
+
+barraNutriologos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuHamburguesaNutriologos{
+    box-shadow: 7px 8px 20px rgba(0, 0, 0, 0.46);
+}
+
+.titulos{
+    color: #5FA466;
+    margin-top: 25px;
+}
+
+.inputPerfil{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.perfil label{
+    font-weight: 800;
+}
+
+#ache{
+    border: 2px solid rgb(0, 77, 15);
+    background-color: rgb(0, 77, 15) ;
+}
+
+#sabiasQue{
+    box-shadow: 7px 8px 20px rgba(0, 0, 0, 0.46);
+    border-radius: 30px;
+    border: none;
+    background-color: beige;
+}
