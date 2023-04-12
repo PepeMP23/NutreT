@@ -3,6 +3,8 @@
 
 # NutreT
 
+Nutrición especializada bajo demanda y accesible.
+
 ## 🚀 Acerca de
 Proyecto presentado en Hackathon Jalisco Talent Land 2023
 
@@ -23,3 +25,6 @@ En el desarrollo de este proyecto se utilizaron las siguientes tecnologías:
 + JavaScript
 + Bootstrap
 + PHP
+
+
+By QuantumTech
