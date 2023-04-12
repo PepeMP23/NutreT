@@ -21,11 +21,11 @@
 }
 
 @media screen and (max-width: 767px) {
-    #btnBuscar {
+    #btnBuscar, .botonAgendar {
       width: 100%;
       text-align: center;
     }
-  }
+}
 
 #menuBusqueda{
     margin: 2px auto;
@@ -79,6 +79,7 @@
     background-color: #dcdbdb;
     border-radius: 12px;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 .fotoUsuario{
@@ -118,10 +119,6 @@
     border-radius: 30px;
     border: none;
     background-color: beige;
-}
-
-.boton{
-    width: auto;
 }
 
 .nombreNutriologo{
