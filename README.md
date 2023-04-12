@@ -2,3 +2,14 @@
 
 # NutreT
 
+## 🚀 Acerca de
+Proyecto presentado en Hackathon Jalisco Talent Land 2023
+Landing page para Salud Digna dedicado a los servición de nutrición especializada bajo demanda
+Hecho por: Jaqueline Castillo, José Muñetón, Daniel Moreno, Araceli Sánchez y Ángel García
+
+## 💥 Features
++ Búsqueda de profesionales de nutrición por especialidad
++ Acceso a información verificada
++ Asesorías en línea para llegar a mayor población
+
+
