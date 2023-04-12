@@ -5,6 +5,7 @@
 #barra{
     background: #555555;
     color: white;
+    overflow: hidden;
 }
 
 .buscador{
@@ -15,9 +16,15 @@
     color: white;
 }
 
+@media screen and (max-width: 767px) {
+    #btnBuscar {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
 #menuBusqueda{
     margin: 2px auto;
-    position: absolute;
     width: 600px;
     height: 46px;
     top: 9px;
@@ -35,7 +42,7 @@
     width: 100%;
     background: #FFFFFF;
     box-shadow: 7px 8px 20px rgba(0, 0, 0, 0.46);
-    border-radius: 50px;
+    border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -64,8 +71,10 @@
     border: none;
 }
 
-#datosNutriologos{
+.datosNutriologos{
     background-color: #dcdbdb;
+    border-radius: 12px;
+    padding-top: 10px;
 }
 
 .fotoUsuario{
@@ -73,18 +82,8 @@
     margin: 3px auto;
 }
 
-#datosNutriologos{
-    border-radius: 12px;
-    padding-top: 10px;
-}
-
 .sucursal{
     font-weight: 800;
-}
-
-barraNutriologos{
-    display: flex;
-    justify-content: flex-end;
 }
 
 .menuHamburguesaNutriologos{
@@ -115,4 +114,22 @@ barraNutriologos{
     border-radius: 30px;
     border: none;
     background-color: beige;
+}
+
+.boton{
+    width: auto;
+}
+
+.nombreNutriologo{
+    font-size: 1.3em;
+}
+
+#listaMedicos{
+    margin-bottom: 50px;
+}
+
+.datosPacientes{
+    background-color: #dcdbdb;
+    border-radius: 12px;
+    padding-top: 10px;
 }
