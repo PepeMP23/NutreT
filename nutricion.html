@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutre-T</title>
-  
+
     <!------ Include the above in your HEAD tag ---------->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/Logo Nutre-T.png" type="image/x-icon">
-    
+
 </head>
+
 <body>
 
     <div id="barra">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa2">
             <div class="container-fluid" id="textoBarra">
                 <a class="navbar-brand" href="#">Tu clínica de Salud digna: Seleccionar...</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                     <form class="d-flex" role="search">
                         <input class="form-control m-2 buscador" type="search" placeholder="Search" aria-label="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                     </form>
                 </div>
                 <a class="navbar-brand" href="login.html">Obtén más beneficios: Registrate | Inicia sesión</a>
+                <button class="navbar-toggler menu-hamburguesa2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </div>
@@ -35,8 +45,11 @@
 
     <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa bg-light">
         <div class="container-fluid ">
-            <a class="navbar-brand" href="index.html"><img id="logotipoNavbar" src="img/SD.png" alt="Logotipo Salud Digna"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img id="logotipoNavbar" src="img/SD.png"
+                    alt="Logotipo Salud Digna"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -141,18 +154,18 @@
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrusel-1.png" class="d-block w-100" alt="imagen-carrusel-1">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel-2.png" class="d-block w-100" alt="imagen-carrusel-2">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel-3.png" class="d-block w-100" alt="imagen-carrusel-3">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrusel-4.png" class="d-block w-100" alt="imagen-carrusel-4">
-          </div>
+            <div class="carousel-item active">
+                <img src="img/carrusel-1.png" class="d-block w-100" alt="imagen-carrusel-1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel-2.png" class="d-block w-100" alt="imagen-carrusel-2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel-3.png" class="d-block w-100" alt="imagen-carrusel-3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel-4.png" class="d-block w-100" alt="imagen-carrusel-4">
+            </div>
         </div>
     </div>
 
@@ -251,12 +264,14 @@
                         <p class="nombreNutriologo">Daniela Vázquez</p>
                         <p>Nutriologa - Nutrición en pacientes oncológicos, León</p>
                         <p class="sucursal">Sucursal Plaza Obelisco</p>
-                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a la...</p>
+                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a
+                            la...</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar" data-bs-toggle="modal" data-bs-target="#modalSitio">
+                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar"
+                                    data-bs-toggle="modal" data-bs-target="#modalSitio">
                                     Agendar asesoría en sitio
                                 </button>
 
@@ -264,7 +279,8 @@
                         </div>
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary boton botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea">
+                                <button type="button" class="btn btn-primary boton botonAgendar" data-bs-toggle="modal"
+                                    data-bs-target="#modalLinea">
                                     Agendar asesoría en línea
                                 </button>
                             </div>
@@ -279,12 +295,14 @@
                         <p class="nombreNutriologo">Daniela Vázquez</p>
                         <p>Nutriologa - Nutrición en pacientes oncológicos, León</p>
                         <p class="sucursal">Sucursal Plaza Obelisco</p>
-                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a la...</p>
+                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a
+                            la...</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Agendar asesoría en sitio
                                 </button>
                             </div>
@@ -306,7 +324,8 @@
                         <p class="nombreNutriologo">Daniela Vázquez</p>
                         <p>Nutriologa - Nutrición en pacientes oncológicos, León</p>
                         <p class="sucursal">Sucursal Plaza Obelisco</p>
-                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a la...</p>
+                        <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a
+                            la...</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
@@ -326,102 +345,117 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-12 col-md-5 mt-3 mb-3">
                 <div class="col-5" id="preguntasFrecuentes">
-                    <h1 class="m-3"> <img id="imagenNutreT" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1679712633290x877799371223628900%2FLogo%2520Nutre-T.png?w=192&h=192&auto=compress&dpr=1.25&fit=max" alt="Nutre-T">
+                    <h1 class="m-3"> <img id="imagenNutreT"
+                            src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1679712633290x877799371223628900%2FLogo%2520Nutre-T.png?w=192&h=192&auto=compress&dpr=1.25&fit=max"
+                            alt="Nutre-T">
                         Nutre-T</h1>
                     <h4>Preguntas Frecuentes</h4>
-                    <p>¿Necesitas ayuda?  Podemos ayudarte</p>
+                    <p>¿Necesitas ayuda? Podemos ayudarte</p>
                     <div class="accordion" id="acordeonQA">
                         <div class="accordion-item m-2" id="item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" id="botonCollapse" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ¿Cómo puedo obtener un 10% de descuento en mi asesoría?
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
-                            <div class="accordion-body" id="respuesta">
-                                Primera respuesta
-                            </div> <!--accordion-body-->
-                          </div> <!--collapseOne-->
-                        </div> <!--accordion-item-->
-                        <div class="accordion-item m-2" id="item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" id="botonCollapse" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                ¿Cómo puedo contactar a mi especialista?
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
-                            <div class="accordion-body" id="respuesta">
-                                Segunda respuesta
-                            </div> <!--accordion-body-->
-                          </div> <!--collapseTwo-->
-                        </div> <!--accordion-item-->
-                        <div class="accordion-item m-2" id="item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed " type="button" id="botonCollapse" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿Puedo agendar mi asesoría en paquete con otros estudios?
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
-                            <div class="accordion-body" id="respuesta">
-                                Tercera respuesta
-                            </div> <!--accordion-body-->
-                          </div> <!--collapseThree-->
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" id="botonCollapse"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    ¿Cómo puedo obtener un 10% de descuento en mi asesoría?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
+                                <div class="accordion-body" id="respuesta">
+                                    Primera respuesta
+                                </div> <!--accordion-body-->
+                            </div> <!--collapseOne-->
                         </div> <!--accordion-item-->
                         <div class="accordion-item m-2" id="item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed " type="button" id="botonCollapse" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                ¿Dónde puedo encontrar información sobre una sana alimentación?</button>
+                                <button class="accordion-button collapsed" type="button" id="botonCollapse"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    ¿Cómo puedo contactar a mi especialista?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
+                                <div class="accordion-body" id="respuesta">
+                                    Segunda respuesta
+                                </div> <!--accordion-body-->
+                            </div> <!--collapseTwo-->
+                        </div> <!--accordion-item-->
+                        <div class="accordion-item m-2" id="item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed " type="button" id="botonCollapse"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    ¿Puedo agendar mi asesoría en paquete con otros estudios?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
+                                <div class="accordion-body" id="respuesta">
+                                    Tercera respuesta
+                                </div> <!--accordion-body-->
+                            </div> <!--collapseThree-->
+                        </div> <!--accordion-item-->
+                        <div class="accordion-item m-2" id="item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed " type="button" id="botonCollapse"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    ¿Dónde puedo encontrar información sobre una sana alimentación?</button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
-                              <div class="accordion-body" id="respuesta">
-                                En nuestra sección “Informa-T” puedes encontrar publicaciones, foros y artículos relacionados a una sana alimentación y estilo de vida.                      
-                            </div> <!--accordion-body-->
+                                <div class="accordion-body" id="respuesta">
+                                    En nuestra sección “Informa-T” puedes encontrar publicaciones, foros y artículos
+                                    relacionados a una sana alimentación y estilo de vida.
+                                </div> <!--accordion-body-->
                             </div> <!--collapseOne-->
-                          </div> <!--accordion-item-->
-                          <div class="accordion-item m-2 mb-5" id="item">
+                        </div> <!--accordion-item-->
+                        <div class="accordion-item m-2 mb-5" id="item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed " type="button" id="botonCollapse" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                ¿Quién puede ver mis datos?</button>
+                                <button class="accordion-button collapsed " type="button" id="botonCollapse"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    ¿Quién puede ver mis datos?</button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#acordeonQA">
-                              <div class="accordion-body" id="respuesta">
-                                Quinta respuesta
+                                <div class="accordion-body" id="respuesta">
+                                    Quinta respuesta
+                                </div>
                             </div>
-                          </div> 
-                    </div> 
-                </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
         <!-- Modal en sitio -->
         <form name="formularioSitio" id="formularioSitio" method="post">
             <!-- Modal Bootstrap -->
-            <div class="modal fade" id="modalSitio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalSitio" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en Sitio</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en Sitio</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="entrada"><strong class="colorasterisco">*</strong> Entrada:</label>
+                            <input type="date" required name="entrada" id="entrada" class="form-control">
+                            <label for="nombre">uno:</label>
+                            <input required type="text" name="nombre" id="nombre" class="form-control">
+                            <label for="fecha">Fecha:</label>
+                            <input required type="date" name="fecha" id="fecha" class="form-control">
+                            <label for="descripcion">Descripcion:</label>
+                            <textarea required name="descripcion" id="descripcion" cols="30" rows="10"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" id="btnGuardar" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <label for="entrada"><strong class="colorasterisco">*</strong> Entrada:</label>
-                        <input type="date" required name="entrada" id="entrada" class="form-control">
-                        <label for="nombre">uno:</label>
-                        <input required type="text" name="nombre" id="nombre" class="form-control">
-                        <label for="fecha">Fecha:</label>
-                        <input required type="date" name="fecha" id="fecha" class="form-control">
-                        <label for="descripcion">Descripcion:</label>
-                        <textarea required name="descripcion" id="descripcion" cols="30" rows="10" class="form-control"></textarea>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" id="btnGuardar" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
                 </div>
             </div>
         </form>
@@ -429,183 +463,197 @@
         <!-- Modal en linea -->
         <form name="formularioLinea" id="formularioLinea" method="post">
             <!-- Modal Bootstrap -->
-            <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en línea</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Busca una fecha y horario para tu estudio de Nutrición:</p>
-                        <label for="fecha"><strong class="colorasterisco">*</strong>Fecha:</label>
-                        <input type="date" name="fecha" id="fecha" class="form-control" required>
-                        <label for="hora"><strong class="colorasterisco">*</strong>Hora:</label>
-                        <select name="hora" id="hora" class="form-control" required>
-                            <option value="">Select Hour</option>
-                            <option value="00:00">00:00</option>
-                            <option value="01:00">01:00</option>
-                            <option value="02:00">02:00</option>
-                            <option value="03:00">03:00</option>
-                            <option value="04:00">04:00</option>
-                            <option value="05:00">05:00</option>
-                            <option value="06:00">06:00</option>
-                            <option value="07:00">07:00</option>
-                            <option value="08:00">08:00</option>
-                            <option value="09:00">09:00</option>
-                            <option value="10:00">10:00</option>
-                            <option value="11:00">11:00</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:00">20:00</option>
-                            <option value="21:00">21:00</option>
-                            <option value="22:00">22:00</option>
-                            <option value="23:00">23:00</option>
-                        </select>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en línea</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Busca una fecha y horario para tu estudio de Nutrición:</p>
+                            <label for="fecha"><strong class="colorasterisco">*</strong>Fecha:</label>
+                            <input type="date" name="fecha" id="fecha" class="form-control" required>
+                            <label for="hora"><strong class="colorasterisco">*</strong>Hora:</label>
+                            <select name="hora" id="hora" class="form-control" required>
+                                <option value="">Select Hour</option>
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                            </select>
 
-                        <hr>
-                        <p class="negritas">Resumen</p>
-                        <div class="resumenModal">
+                            <hr>
+                            <p class="negritas">Resumen</p>
+                            <div class="resumenModal">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="negritas">Estudio:</p>
+                                        <p>Aquí va el estudio</p>
+                                        <p class="negritas">Horario:</p>
+                                        <p>Aquí va la fecha y hora</p>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p class="negritas">Precio:</p>
+                                            </div>
+                                            <div class="col-4 saldoPositivo cantidad">
+                                                $50.00
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p class="negritas">Servicios:</p>
+                                            </div>
+                                            <div class="col-4 cantidad">
+                                                $60.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p>Beneficios por pago en línea:</p>
+                                            </div>
+                                            <div class="col-4 saldoPositivo cantidad">
+                                                -$10.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <p>Total:</p>
+                                            </div>
+                                            <div class="col-4 saldoPositivo cantidad">
+                                                $50.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="negritas">¿Para quién es la cita?</p>
                             <div class="row">
-                                <div class="col-12">
-                                    <p class="negritas">Estudio:</p>
-                                    <p>Aquí va el estudio</p>
-                                    <p class="negritas">Horario:</p>
-                                    <p>Aquí va la fecha y hora</p>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <p class="negritas">Precio:</p>
-                                        </div>
-                                        <div class="col-4 saldoPositivo cantidad">
-                                            $50.00
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <p class="negritas">Servicios:</p>
-                                        </div>
-                                        <div class="col-4 cantidad">
-                                            $60.00
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <p>Beneficios por pago en línea:</p>
-                                        </div>
-                                        <div class="col-4 saldoPositivo cantidad">
-                                            -$10.00
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <p>Total:</p>
-                                        </div>
-                                        <div class="col-4 saldoPositivo cantidad">
-                                            $50.00
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <p class="negritas">¿Para quién es la cita?</p>
-                        <div class="row">
-                            <div class="container">
-                                <div class="radio-tile-group">
-                                    <div class="input-container">
-                                        <div class="col-10">
-                                            <input id="paraMi" class="radio-button" type="radio" name="radio" />
-                                            <div class="radio-tile">
-                                                <label for="paraMi" class="radio-tile-label">Para mí</label>
+                                <div class="container">
+                                    <div class="radio-tile-group">
+                                        <div class="input-container">
+                                            <div class="col-10">
+                                                <input id="paraMi" class="radio-button" type="radio" name="radio" />
+                                                <div class="radio-tile">
+                                                    <label for="paraMi" class="radio-tile-label">Para mí</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="input-container">
-                                        <div class="col-10">
-                                            <input id="otraPersona" class="radio-button" type="radio" name="radio" />
-                                            <div class="radio-tile">
-                                            <label for="otraPersona" class="radio-tile-label">Otra persona</label>
+                                        <div class="input-container">
+                                            <div class="col-10">
+                                                <input id="otraPersona" class="radio-button" type="radio"
+                                                    name="radio" />
+                                                <div class="radio-tile">
+                                                    <label for="otraPersona" class="radio-tile-label">Otra
+                                                        persona</label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <hr>
-                        <p class="negritas">Datos Personales</p>
-                        <p>Estos deben coincidir con tu identificación oficial</p>
-                        <label for="nombre"></label>
-                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)" required>
-                        
-                        <label for="apellidoPaterno"></label>
-                        <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control" placeholder="Apellido Paterno" required>
+                            <hr>
+                            <p class="negritas">Datos Personales</p>
+                            <p>Estos deben coincidir con tu identificación oficial</p>
+                            <label for="nombre"></label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)"
+                                required>
 
-                        <label for="apellidoMaterno"></label>
-                        <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control" placeholder="Apellido Paterno (Opcional)">
+                            <label for="apellidoPaterno"></label>
+                            <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control"
+                                placeholder="Apellido Paterno" required>
 
-                        <label for="fechaNacimiento" class="mt-2">Fecha Nacimiento:</label>
-                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control" placeholder="Fecha Nacimiento" required>
+                            <label for="apellidoMaterno"></label>
+                            <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control"
+                                placeholder="Apellido Paterno (Opcional)">
 
-                        <p class="mt-3 mb-0 ml-0">Género:</p>
-                        <input type="radio" id="hombre" name="buttonGroup"/>
-                        <label for="button1">Hombre</label>
+                            <label for="fechaNacimiento" class="mt-2">Fecha Nacimiento:</label>
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control"
+                                placeholder="Fecha Nacimiento" required>
 
-                        <input type="radio" id="mujer" name="buttonGroup" />
-                        <label for="button2">Mujer</label>
+                            <p class="mt-3 mb-0 ml-0">Género:</p>
+                            <input type="radio" id="hombre" name="buttonGroup" />
+                            <label for="button1">Hombre</label>
 
-                        <input type="radio" id="noDecir" name="buttonGroup" />
-                        <label for="button3" class="mb-3">Prefiero no decir</label>
+                            <input type="radio" id="mujer" name="buttonGroup" />
+                            <label for="button2">Mujer</label>
 
-                        <label for="email mt-3"></label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+                            <input type="radio" id="noDecir" name="buttonGroup" />
+                            <label for="button3" class="mb-3">Prefiero no decir</label>
 
-                        <label for="WhatsApp"></label>
-                        <input type="text" name="WhatsApp" id="WhatsApp" class="form-control" placeholder="WhatsApp" required>
+                            <label for="email mt-3"></label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Correo electrónico" required>
 
-                        <label for="ConfirmaWhatsApp"></label>
-                        <input type="text" name="ConfirmaWhatsApp" id="ConfirmaWhatsApp" class="form-control" placeholder="Confirma WhatsApp" required>
+                            <label for="WhatsApp"></label>
+                            <input type="text" name="WhatsApp" id="WhatsApp" class="form-control" placeholder="WhatsApp"
+                                required>
 
-                        <hr>
+                            <label for="ConfirmaWhatsApp"></label>
+                            <input type="text" name="ConfirmaWhatsApp" id="ConfirmaWhatsApp" class="form-control"
+                                placeholder="Confirma WhatsApp" required>
 
-                        <p class="negritas">Selecciona tu método de pago</p>
-                        <input type="radio" id="visa" name="buttonPago"/>
-                        <label for="button1">Visa</label>
+                            <hr>
 
-                        <input type="radio" id="oxxo" name="buttonPago" />
-                        <label for="button2">Oxxo</label>
+                            <p class="negritas">Selecciona tu método de pago</p>
+                            <input type="radio" id="visa" name="buttonPago" />
+                            <label for="button1">Visa</label>
 
-                        <input type="radio" id="coppel" name="buttonPago" />
-                        <label for="button3" class="mb-3">Coppel</label>
+                            <input type="radio" id="oxxo" name="buttonPago" />
+                            <label for="button2">Oxxo</label>
 
-                        <input type="radio" id="clinica" name="buttonPago" />
-                        <label for="button3" class="mb-3">Pago en clínica</label>
+                            <input type="radio" id="coppel" name="buttonPago" />
+                            <label for="button3" class="mb-3">Coppel</label>
 
-                        <br>
+                            <input type="radio" id="clinica" name="buttonPago" />
+                            <label for="button3" class="mb-3">Pago en clínica</label>
 
-                        <input type="checkbox" id="avisoPrivacidad" name="avisoPrivacidad" value="Acepto">
-                        <label for="avisoPrivacidad">Acepto el Aviso de Privacidad y los Términos y Condiciones de Uso de Salud-digna.org</label>
+                            <br>
 
-                        <input type="checkbox" id="acepto" name="acepto" value="Acepto">
-                        <label for="acepto">Acepto haber leído el protocolo de acceso a clínica.</label>
+                            <input type="checkbox" id="avisoPrivacidad" name="avisoPrivacidad" value="Acepto">
+                            <label for="avisoPrivacidad">Acepto el Aviso de Privacidad y los Términos y Condiciones de
+                                Uso de Salud-digna.org</label>
 
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>                              
+                            <input type="checkbox" id="acepto" name="acepto" value="Acepto">
+                            <label for="acepto">Acepto haber leído el protocolo de acceso a clínica.</label>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 
 </body>
+
 </html>
