@@ -208,7 +208,7 @@
                             <option value="Zapopan Las Aguilas">Zapopan Las Águilas</option>
                         </select>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-md-5 mb-2">
                         <select class="form-select bg-light" id="selectEspecialidad">
                             <option selected="true" disabled="disabled">Selecciona un especialista</option>
                             <option value="nutricionClinica">Nutrición clínica</option>
@@ -239,14 +239,15 @@
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 boton">
+                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar" data-bs-toggle="modal" data-bs-target="#modalSitio">
                                     Agendar asesoría en sitio
                                 </button>
+
                             </div>
                         </div>
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary boton">
+                                <button type="button" class="btn btn-primary boton botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea">
                                     Agendar asesoría en línea
                                 </button>
                             </div>
@@ -266,14 +267,14 @@
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 boton">
+                                <button type="button" class="btn btn-primary mt-3 mb-3 boton botonAgendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Agendar asesoría en sitio
                                 </button>
                             </div>
                         </div>
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary boton">
+                                <button type="button" class="btn btn-primary boton botonAgendar">
                                     Agendar asesoría en línea
                                 </button>
                             </div>
@@ -293,22 +294,22 @@
                     <div class="col-12 col-md-3">
                         <div class="row m-0">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 boton">
+                                <button type="button" class="btn btn-primary mt-3 mb-3 botonAgendar">
                                     Agendar asesoría en sitio
                                 </button>
                             </div>
                         </div>
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary boton">
+                                <button type="button" class="btn btn-primary botonAgendar">
                                     Agendar asesoría en línea
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
+            
             <div class="col-12 col-md-5 mt-3 mb-3">
                 <div class="col-5" id="preguntasFrecuentes">
                     <h1 class="m-3"> <img id="imagenNutreT" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1679712633290x877799371223628900%2FLogo%2520Nutre-T.png?w=192&h=192&auto=compress&dpr=1.25&fit=max" alt="Nutre-T">
@@ -376,11 +377,162 @@
                     </div> 
                 </div> 
             </div>
-            </div>
         </div>
     </div>
 
+        <!-- Modal en sitio -->
+        <form name="formularioSitio" id="formularioSitio" method="post">
+            <!-- Modal Bootstrap -->
+            <div class="modal fade" id="modalSitio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en Sitio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="entrada"><strong class="colorasterisco">*</strong> Entrada:</label>
+                        <input type="date" required name="entrada" id="entrada" class="form-control">
+                        <label for="nombre">uno:</label>
+                        <input required type="text" name="nombre" id="nombre" class="form-control">
+                        <label for="fecha">Fecha:</label>
+                        <input required type="date" name="fecha" id="fecha" class="form-control">
+                        <label for="descripcion">Descripcion:</label>
+                        <textarea required name="descripcion" id="descripcion" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="btnGuardar" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Modal en linea -->
+        <form name="formularioLinea" id="formularioLinea" method="post">
+            <!-- Modal Bootstrap -->
+            <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en línea</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Busca una fecha y horario para tu estudio de Nutrición:</p>
+                        <label for="fecha"><strong class="colorasterisco">*</strong>Fecha:</label>
+                        <input type="date" name="fecha" id="fecha" class="form-control" required>
+                        <label for="hora"><strong class="colorasterisco">*</strong>Hora:</label>
+                        <select name="hora" id="hora" class="form-control" required>
+                            <option value="">Select Hour</option>
+                            <option value="00:00">00:00</option>
+                            <option value="01:00">01:00</option>
+                            <option value="02:00">02:00</option>
+                            <option value="03:00">03:00</option>
+                            <option value="04:00">04:00</option>
+                            <option value="05:00">05:00</option>
+                            <option value="06:00">06:00</option>
+                            <option value="07:00">07:00</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+
+                        <hr>
+                        <p>Resumen</p>
+                        <div class="resumenModal">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="negritas">Estudio:</p>
+                                    <p>Aquí va el estudio</p>
+                                    <p class="negritas">Horario:</p>
+                                    <p>Aquí va la fecha y hora</p>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p class="negritas">Precio:</p>
+                                        </div>
+                                        <div class="col-4 saldoPositivo cantidad">
+                                            $50.00
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p class="negritas">Servicios:</p>
+                                        </div>
+                                        <div class="col-4 cantidad">
+                                            $60.00
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p>Beneficios por pago en línea:</p>
+                                        </div>
+                                        <div class="col-4 saldoPositivo cantidad">
+                                            -$10.00
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <p>Total:</p>
+                                        </div>
+                                        <div class="col-4 saldoPositivo cantidad">
+                                            $50.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>¿Para quién es la cita?</p>
+                        <input type="radio" id="btnParaMi" name="citaPersona" class="botonPersona"/>
+                        <label for="btnParaMi">Para mí</label>
+                        <input type="radio" id="btnOtraPersona" name="citaPersona" class="botonPersona"/>
+                        <label for="btnOtraPersona">Otra Persona</label>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                  <div class="input-container">
+                                    <input id="walk" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                      <label for="walk" class="radio-tile-label">Walk</label>
+                                    </div>
+                                  </div>
+                                  <div class="input-container">
+                                    <input id="walk" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                      <label for="walk" class="radio-tile-label">Walk</label>
+                                    </div>
+                                  </div>
+                              
+                                </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 </html>

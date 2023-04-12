@@ -1,3 +1,7 @@
+:root{
+    --azulBoton: #295EE7;
+}
+
 #logotipoNavbar{
     height: 50px;
 }
@@ -17,7 +21,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    #btnBuscar {
+    #btnBuscar, .botonAgendar {
       width: 100%;
       text-align: center;
     }
@@ -82,7 +86,7 @@
     margin: 3px auto;
 }
 
-.sucursal{
+.sucursal, .negritas{
     font-weight: 800;
 }
 
@@ -116,10 +120,6 @@
     background-color: beige;
 }
 
-.boton{
-    width: auto;
-}
-
 .nombreNutriologo{
     font-size: 1.3em;
 }
@@ -132,4 +132,95 @@
     background-color: #dcdbdb;
     border-radius: 12px;
     padding-top: 10px;
+}
+
+.resumenModal{
+    background-color: #D7D3CB;
+    border-radius: 4px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.saldoPositivo{
+    color: #5FA466;
+}
+
+.cantidad{
+    text-align: right;
+    margin-left: px;
+}
+
+.botonPrsona {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: cover;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-container {
+    position: relative;
+    height:  7rem;
+    width:  7rem;
+    margin: 0.5rem;
+}
+
+.radio-button {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--azulBoton);
+    border-radius: 5px;
+    padding: 1rem;
+    transition: transform 300ms ease;
+}
+    
+.radio-tile-label {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(azulBoton);
+}
+
+.radio-button:checked + .radio-tile {
+    background-color: var(--azulBoton);
+    border: 2px solid var(--azulBoton);
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+    
+.radio-tile-label {
+    color: white;
+    background-color: var(--azulBoton)
 }
