@@ -17,6 +17,9 @@ Hecho por: Jaqueline Castillo, José Muñetón, Daniel Moreno, Araceli Sánchez 
 + Acceso a información verificada
 + Asesorías en línea para llegar a mayor población
 
+## 📷 Screenshots
+
+
 ## 💻 Tecnologías
 En el desarrollo de este proyecto se utilizaron las siguientes tecnologías:
 
