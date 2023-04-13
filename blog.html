@@ -14,29 +14,138 @@
 </head>
 <body>
 
-    <div class="menuHamburguesaNutriologos">
-        <nav class="navbar navbar-expand-lg menuHamburguesa bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img id="logotipoNavbar" src="img/SD.png" alt="Logotipo Salud Digna"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div id="barra">
+        <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa2">
+            <div class="container-fluid" id="textoBarra">
+                <a class="navbar-brand" href="#">Tu clínica de Salud digna: Seleccionar...</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <form class="d-flex" role="search">
+                        <input class="form-control m-2 buscador" type="search" placeholder="Search" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search mt-3" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </form>
+                </div>
+                <a class="navbar-brand" href="login.html">Obtén más beneficios: Registrate | Inicia sesión</a>
+                <button class="navbar-toggler menu-hamburguesa2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav" >
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pacientes.html">Mis pacientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="blog.html">Blog Nutre-T</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="perfil.html">Mi perfil</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img id="logotipoNavbar" src="img/SD.png"
+                    alt="Logotipo Salud Digna"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            COVID-19
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Agendar Prueba PCR COVID-19</a></li>
+                            <li><a class="dropdown-item" href="#">Agendar Prueba Antígenos COVID</a></li>
+                            <li><a class="dropdown-item" href="#">Diferencia entre pruebas</a></li>
+                            <li><a class="dropdown-item" href="#">Información de la enfermedad</a></li>
+                            <li><a class="dropdown-item" href="#">Estadísticas en tiempo real</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                            <li><a class="dropdown-item" href="#">Bolsa de trabajo</a></li>
+                            <li><a class="dropdown-item" href="#">Contáctanos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Laboratorio</a></li>
+                            <li><a class="dropdown-item" href="#">Ultrasonido</a></li>
+                            <li><a class="dropdown-item" href="#">Lentes</a></li>
+                            <li><a class="dropdown-item" href="#">Electrocardiograma</a></li>
+                            <li><a class="dropdown-item" href="#">Tomografía</a></li>
+                            <li><a class="dropdown-item" href="#">Rayos X</a></li>
+                            <li><a class="dropdown-item" href="#">Densitometría</a></li>
+                            <li><a class="dropdown-item" href="#">Resonancia magnética</a></li>
+                            <li><a class="dropdown-item" href="#">Papanicolaou</a></li>
+                            <li><a class="dropdown-item" href="#">Mastografía</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nutrición
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="nutricion.html">Citas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pacientes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Consulta de resultados</a></li>
+                            <li><a class="dropdown-item" href="#">Haz una cita</a></li>
+                            <li><a class="dropdown-item" href="#">Precios y preparaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Cambios en mi cita y devoluciones</a></li>
+                            <li><a class="dropdown-item" href="#">Ubica tu clínica</a></li>
+                            <li><a class="dropdown-item" href="#">¿Necesitas facturación?</a></li>
+                            <li><a class="dropdown-item" href="#">Evalúa nuestros servicios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Atención a empresas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver paquetes</a></li>
+                            <li><a class="dropdown-item" href="#">Check ups</a></li>
+                            <li><a class="dropdown-item" href="#">Perfiles de admisión</a></li>
+                            <li><a class="dropdown-item" href="#">Contactar con un agente</a></li>
+                            <li><a class="dropdown-item" href="#">Ubica tu clínica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ubica tu clínica
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver paquetes</a></li>
+                            <li><a class="dropdown-item" href="#">Check ups</a></li>
+                            <li><a class="dropdown-item" href="#">Perfiles de admisión</a></li>
+                            <li><a class="dropdown-item" href="#">Contactar con un agente</a></li>
+                            <li><a class="dropdown-item" href="#">Ubica tu clínica</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
