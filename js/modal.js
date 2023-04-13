@@ -76,5 +76,3 @@ finalBtn.addEventListener('click', () => {
     nextBtn.classList.remove('d-none');
     finalBtn.classList.add('d-none');
   });
-
-
