@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+ <!--Barra de navegación cn buscador-->
     <div id="barra">
         <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa2">
             <div class="container-fluid" id="textoBarra">
@@ -42,7 +42,7 @@
         </nav>
     </div>
 
-
+    <!--Barra de navegación con dropdown-->
     <nav class="navbar navbar-expand-lg sticky-top menuHamburguesa bg-light">
         <div class="container-fluid ">
             <a class="navbar-brand" href="index.html"><img id="logotipoNavbar" src="img/SD.png"
@@ -152,6 +152,7 @@
         </div>
     </nav>
 
+    <!--Carrusel-->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -176,7 +177,7 @@
                 <hr>
                 <div class="row m-0">
                     <div class="col-12 col-md-5 mb-2">
-                        <select class="form-select bg-light" id="selectCiudad">
+                        <select class="form-select bg-light" id="selectCiudad">                                         
                             <option selected="true" disabled="disabled">Selecciona una ciudad</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Atizapan de Zaragoza">Atizapán de Zaragoza</option>
@@ -456,18 +457,19 @@
             </div>
         </form>
 
-        <!-- Modal en linea -->
-        <form name="formularioLinea" id="formularioLinea" method="post">
-            <!-- Modal Bootstrap -->
-            <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en línea</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
+       <!-- Modal en linea -->
+    <form name="formularioLinea" id="formularioLinea" method="post">
+        <!-- Modal Bootstrap -->
+        <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en línea</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="step-1 modalClase">
                             <p>Busca una fecha y horario para tu estudio de Nutrición:</p>
                             <label for="fecha"><strong class="colorasterisco">*</strong>Fecha:</label>
                             <input type="date" name="fecha" id="fecha" class="form-control" required>
@@ -499,8 +501,75 @@
                                 <option value="22:00">22:00</option>
                                 <option value="23:00">23:00</option>
                             </select>
-
+                        </div>
+                        <div class="step-2 d-none modalClase">
+                            <p class="negritas">¿Para quién es la cita?</p>
+                            <div class="row">
+                                <div class="container">
+                                    <div class="radio-tile-group">
+                                        <div class="input-container">
+                                            <div class="col-10">
+                                                <input id="paraMi" class="radio-button" type="radio" name="radio" />
+                                                <div class="radio-tile">
+                                                    <label for="paraMi" class="radio-tile-label">Para mí</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-container">
+                                            <div class="col-10">
+                                                <input id="otraPersona" class="radio-button" type="radio"
+                                                    name="radio" />
+                                                <div class="radio-tile">
+                                                    <label for="otraPersona" class="radio-tile-label">Otra
+                                                        persona</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <hr>
+                            <p class="negritas">Datos Personales</p>
+                            <p>Estos deben coincidir con tu identificación oficial</p>
+                            <label for="nombre"></label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)"
+                                required>
+    
+                            <label for="apellidoPaterno"></label>
+                            <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control"
+                                placeholder="Apellido Paterno" required>
+    
+                            <label for="apellidoMaterno"></label>
+                            <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control"
+                                placeholder="Apellido Paterno (Opcional)">
+    
+                            <label for="fechaNacimiento" class="mt-2">Fecha Nacimiento:</label>
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control"
+                                placeholder="Fecha Nacimiento" required>
+    
+                            <p class="mt-3 mb-0 ml-0">Género:</p>
+                            <input type="radio" id="hombre" name="buttonGroup" />
+                            <label for="button1">Hombre</label>
+    
+                            <input type="radio" id="mujer" name="buttonGroup" />
+                            <label for="button2">Mujer</label>
+    
+                            <input type="radio" id="noDecir" name="buttonGroup" />
+                            <label for="button3" class="mb-3">Prefiero no decir</label>
+    
+                            <label for="email mt-3"></label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Correo electrónico" required>
+    
+                            <label for="WhatsApp"></label>
+                            <input type="text" name="WhatsApp" id="WhatsApp" class="form-control" placeholder="WhatsApp"
+                                required>
+    
+                            <label for="ConfirmaWhatsApp"></label>
+                            <input type="text" name="ConfirmaWhatsApp" id="ConfirmaWhatsApp" class="form-control"
+                                placeholder="Confirma WhatsApp" required>
+                        </div>
+                        <div class="step-3 d-none modalClase">
                             <p class="negritas">Resumen</p>
                             <div class="resumenModal">
                                 <div class="row">
@@ -546,109 +615,51 @@
                                 </div>
                             </div>
                             <hr>
-                            <p class="negritas">¿Para quién es la cita?</p>
-                            <div class="row">
-                                <div class="container">
-                                    <div class="radio-tile-group">
-                                        <div class="input-container">
-                                            <div class="col-10">
-                                                <input id="paraMi" class="radio-button" type="radio" name="radio" />
-                                                <div class="radio-tile">
-                                                    <label for="paraMi" class="radio-tile-label">Para mí</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="input-container">
-                                            <div class="col-10">
-                                                <input id="otraPersona" class="radio-button" type="radio"
-                                                    name="radio" />
-                                                <div class="radio-tile">
-                                                    <label for="otraPersona" class="radio-tile-label">Otra
-                                                        persona</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
+    
                             <hr>
-                            <p class="negritas">Datos Personales</p>
-                            <p>Estos deben coincidir con tu identificación oficial</p>
-                            <label for="nombre"></label>
-                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)"
-                                required>
-
-                            <label for="apellidoPaterno"></label>
-                            <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control"
-                                placeholder="Apellido Paterno" required>
-
-                            <label for="apellidoMaterno"></label>
-                            <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control"
-                                placeholder="Apellido Paterno (Opcional)">
-
-                            <label for="fechaNacimiento" class="mt-2">Fecha Nacimiento:</label>
-                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control"
-                                placeholder="Fecha Nacimiento" required>
-
-                            <p class="mt-3 mb-0 ml-0">Género:</p>
-                            <input type="radio" id="hombre" name="buttonGroup" />
-                            <label for="button1">Hombre</label>
-
-                            <input type="radio" id="mujer" name="buttonGroup" />
-                            <label for="button2">Mujer</label>
-
-                            <input type="radio" id="noDecir" name="buttonGroup" />
-                            <label for="button3" class="mb-3">Prefiero no decir</label>
-
-                            <label for="email mt-3"></label>
-                            <input type="email" name="email" id="email" class="form-control"
-                                placeholder="Correo electrónico" required>
-
-                            <label for="WhatsApp"></label>
-                            <input type="text" name="WhatsApp" id="WhatsApp" class="form-control" placeholder="WhatsApp"
-                                required>
-
-                            <label for="ConfirmaWhatsApp"></label>
-                            <input type="text" name="ConfirmaWhatsApp" id="ConfirmaWhatsApp" class="form-control"
-                                placeholder="Confirma WhatsApp" required>
-
-                            <hr>
-
+    
                             <p class="negritas">Selecciona tu método de pago</p>
                             <input type="radio" id="visa" name="buttonPago" />
                             <label for="button1">Visa</label>
-
+    
                             <input type="radio" id="oxxo" name="buttonPago" />
                             <label for="button2">Oxxo</label>
-
+    
                             <input type="radio" id="coppel" name="buttonPago" />
                             <label for="button3" class="mb-3">Coppel</label>
-
+    
                             <input type="radio" id="clinica" name="buttonPago" />
                             <label for="button3" class="mb-3">Pago en clínica</label>
-
+    
                             <br>
-
+    
                             <input type="checkbox" id="avisoPrivacidad" name="avisoPrivacidad" value="Acepto">
                             <label for="avisoPrivacidad">Acepto el Aviso de Privacidad y los Términos y Condiciones de
                                 Uso de Salud-digna.org</label>
-
+    
                             <input type="checkbox" id="acepto" name="acepto" value="Acepto">
                             <label for="acepto">Acepto haber leído el protocolo de acceso a clínica.</label>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" id="btnGuardar" class="btn btn-primary">Guardar</button>
-                            </div>
                         </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary prev-step d-none">Anterior</button>
+
+                        <button type="button" class="btn btn-primary next-step">Siguiente</button>
+                        <button type="button" class="btn btn-success final-step d-none" data-bs-dismiss="modal">Enviar</button>
+                      </div>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
+
+            <script src="js/modal.js"></script>
 
 </body>
 
