@@ -152,7 +152,7 @@
         </div>
     </nav>
 
-    <!--Carrusel-->
+    <!--Carrusel de fotos-->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -170,14 +170,77 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid"> <!-- Contenedor de la sección de especialistas -->
         <div class="row m-0 mt-3">
             <div class="col-12 col-md-7">
                 <h2>Conoce a nuestros especialistas</h2>
                 <hr>
                 <div class="row m-0">
-                    <div class="col-12 col-md-5 mb-2">
-                        <select class="form-select bg-light" id="selectCiudad">                                         
+                    <div class="col-12 col-md-3 mb-2">
+                        <select class="form-select bg-light" id="selectEstado">       <!-- Select Estado -->                                       
+                            <option selected="true" disabled="disabled">Selecciona tu estado</option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Atizapan de Zaragoza">Atizapán de Zaragoza</option>
+                            <option value="Azcapotzalco">Azcapotzalco</option>
+                            <option value="Cancun">Cancún</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Ciudad Azteca">Ciudad Azteca</option>
+                            <option value="Coacalco">Coacalco</option>
+                            <option value="Coyoacan">Coyoacán</option>
+                            <option value="Cuauhtemoc">Cuauhtemoc</option>
+                            <option value="Culiacan">Culiacán</option>
+                            <option value="Culiacán Cañadas">Culiacán Cañadas</option>
+                            <option value="Culiacan Las Torres">Culiacán Las Torres</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Ecatepec">Ecatepec</option>
+                            <option value="Ensenada">Ensenada</option>
+                            <option value="Guadalajara Americas">Guadalajara Américas</option>
+                            <option value="Guadalajara Circunvalacion">Guadalajara Circunvalación</option>
+                            <option value="Guadalajara San Juan">Guadalajara San Juan</option>
+                            <option value="Guadalajara Tetlan">Guadalajara Tetlan</option>
+                            <option value="Guamuchil">Guamuchil</option>
+                            <option value="Guasave">Guasave</option>
+                            <option value="Gustavo A Madero">Gustavo A Madero</option>
+                            <option value="Hermosillo">Hermosillo</option>
+                            <option value="Iztacalco La Viga">Iztacalco La Viga</option>
+                            <option value="Iztapalapa">Iztapalapa</option>
+                            <option value="Iztapalapa Centro">Iztapalapa Centro</option>
+                            <option value="Leon">León</option>
+                            <option value="Leon Obelisco">León Obelisco</option>
+                            <option value="Los Mochis">Los Mochis</option>
+                            <option value="Los Reyes La Paz">Los Reyes La Paz</option>
+                            <option value="Mazatlan">Mazatlán</option>
+                            <option value="Mexicali">Mexicali</option>
+                            <option value="Mexicali Pedregal">Mexicali Pedregal</option>
+                            <option value="Monterrey">Monterrey</option>
+                            <option value="Morelia">Morelia</option>
+                            <option value="Naucalpan">Naucalpan</option>
+                            <option value="Nezahualcoyotl">Nezahualcoyotl</option>
+                            <option value="Obregon">Obregón</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Puebla Capu">Puebla Capu</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Saltillo">Saltillo</option>
+                            <option value="San Luis Potosi">San Luis Potosí</option>
+                            <option value="San Nicolás de los Garza">San Nicolás de los Garza</option>
+                            <option value="Tecamac">Tecamac</option>
+                            <option value="Tepic">Tepic</option>
+                            <option value="Tijuana">Tijuana</option>
+                            <option value="Tijuana Centro">Tijuana Centro</option>
+                            <option value="Tlalnepantla">Tlalnepantla</option>
+                            <option value="Tlalpan">Tlalpan</option>
+                            <option value="Toluca">Toluca</option>
+                            <option value="Tonala Tonaltecas">Tonalá Tonaltecas</option>
+                            <option value="Torreon">Torreón</option>
+                            <option value="Tuxtla Gutierrez">Tuxtla Gutiérrez</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Xalapa">Xalapa</option>
+                            <option value="Zapopan Centro">Zapopan Centro</option>
+                            <option value="Zapopan Las Aguilas">Zapopan Las Águilas</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2">
+                        <select class="form-select bg-light" id="selectCiudad">       <!-- Select Ciudad -->                                       
                             <option selected="true" disabled="disabled">Selecciona una ciudad</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Atizapan de Zaragoza">Atizapán de Zaragoza</option>
@@ -239,8 +302,8 @@
                             <option value="Zapopan Las Aguilas">Zapopan Las Águilas</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-5 mb-2">
-                        <select class="form-select bg-light" id="selectEspecialidad">
+                    <div class="col-12 col-md-4 mb-2">
+                        <select class="form-select bg-light" id="selectEspecialidad">  <!-- Select Especialidad -->
                             <option selected="true" disabled="disabled">Selecciona un especialista</option>
                             <option value="nutricionClinica">Nutrición clínica</option>
                             <option value="nutricionDeportiva">Nutrición deportiva</option>
@@ -253,11 +316,11 @@
                             <option value="nutricionPediatrica">Nutrición pediátrica</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-2 mb-2">
+                    <div class="col-12 col-md-2 mb-2"> <!-- Boton Buscar -->
                         <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
                     </div>
                 </div>
-                <div class="row m-0 mt-3 datosNutriologos">
+                <div class="row m-0 mt-3 datosNutriologos"> <!-- Datos Nutriologos -->
                     <div class="col-12 col-md-3">
                         <img class=" fotoUsuario rounded-4" src="img/sinUsuario.jpeg" alt="No hay usuario">
                     </div>
@@ -269,23 +332,17 @@
                             la...</p>
                     </div>
                     <div class="col-12 col-md-3 col-sm-12">
-                        <div class="row m-0">
-                            <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 botonAgendar" data-bs-toggle="modal" data-bs-target="#modalSitio">
-                                    Agendar asesoría en sitio
-                                </button>
-                            </div>
-                        </div>
+                        
                         <div class="row m-0 mb-3 col-sm-12">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea">
-                                    Agendar asesoría en línea
+                                <button type="button" class="btn btn-primary botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea"> <!-- Boton Agendar -->
+                                    Agendar asesoría
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row m-0 mt-3 datosNutriologos">
+                <div class="row m-0 mt-3 datosNutriologos"> <!-- Datos Nutriologos -->
                     <div class="col-12 col-md-3">
                         <img class=" fotoUsuario rounded-4" src="img/sinUsuario.jpeg" alt="No hay usuario">
                     </div>
@@ -296,26 +353,19 @@
                         <p>Egresado de la Universidad Autónoma de México con cédula profesional xxxxxxxx, con enfoque a la...</p>
                     </div>
                     <div class="col-12 col-md-3">
-                        <div class="row m-0">
-                            <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 botonAgendar"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Agendar asesoría en sitio
-                                </button>
-                            </div>
-                        </div>
+                        
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary botonAgendar">
-                                    Agendar asesoría en línea
+                                <button type="button" class="btn btn-primary botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea">     <!-- Boton Agendar -->
+                                    Agendar asesoría
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row m-0 mt-3 datosNutriologos">
+                <div class="row m-0 mt-3 datosNutriologos"> <!-- Datos Nutriologos -->
                     <div class="col-12 col-md-3">
-                        <img class=" fotoUsuario rounded-4" src="img/sinUsuario.jpeg" alt="No hay usuario">
+                        <img class=" fotoUsuario rounded-4" src="img/sinUsuario.jpeg" alt="No hay usuario"> 
                     </div>
                     <div class="col-12 col-md-6">
                         <p class="nombreNutriologo">Daniela Vázquez</p>
@@ -325,17 +375,10 @@
                             la...</p>
                     </div>
                     <div class="col-12 col-md-3">
-                        <div class="row m-0">
-                            <div class="col-12">
-                                <button type="button" class="btn btn-primary mt-3 mb-3 botonAgendar">
-                                    Agendar asesoría en sitio
-                                </button>
-                            </div>
-                        </div>
                         <div class="row m-0 mb-3">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary botonAgendar">
-                                    Agendar asesoría en línea
+                                <button type="button" class="btn btn-primary botonAgendar" data-bs-toggle="modal" data-bs-target="#modalLinea"> <!-- Boton Agendar -->
+                                    Agendar asesoría
                                 </button>
                             </div>
                         </div>
@@ -343,7 +386,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-5 mt-3 mb-3">
+            <div class="col-12 col-md-5 mt-3 mb-3"> <!-- Preguntas Frecuentes -->
                 <div class="col-5" id="preguntasFrecuentes">
                     <h1 class="m-3"> <img id="imagenNutreT"
                             src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1679712633290x877799371223628900%2FLogo%2520Nutre-T.png?w=192&h=192&auto=compress&dpr=1.25&fit=max"
@@ -426,38 +469,8 @@
             </div>
         </div>
 
-        <!-- Modal en sitio -->
-        <form name="formularioSitio" id="formularioSitio" method="post">
-            <!-- Modal Bootstrap -->
-            <div class="modal fade" id="modalSitio" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Agendar cita en Sitio</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <label for="entrada"><strong class="colorasterisco">*</strong> Entrada:</label>
-                            <input type="date" required name="entrada" id="entrada" class="form-control">
-                            <label for="nombre">uno:</label>
-                            <input required type="text" name="nombre" id="nombre" class="form-control">
-                            <label for="fecha">Fecha:</label>
-                            <input required type="date" name="fecha" id="fecha" class="form-control">
-                            <label for="descripcion">Descripcion:</label>
-                            <textarea required name="descripcion" id="descripcion" cols="30" rows="10"
-                                class="form-control"></textarea>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" id="btnGuardar" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
 
-       <!-- Modal en linea -->
+       <!-- Modal  -->
     <form name="formularioLinea" id="formularioLinea" method="post">
         <!-- Modal Bootstrap -->
         <div class="modal fade" id="modalLinea" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -470,12 +483,21 @@
                     </div>
                     <div class="modal-body">
                         <div class="step-1 modalClase">
-                            <p>Busca una fecha y horario para tu estudio de Nutrición:</p>
+                            <p class="negritas">Selecciona la modalidad que prefieras</p>
+                            <input type="radio" id="presencial" name="buttonGroup" />
+                            <label for="button1">Presencial</label>
+    
+                            <input type="radio" id="enLinea" name="buttonGroup" />
+                            <label for="button2">En línea</label>
+
+                            <hr>
+
+                            <p>Selecciona una fecha y horario para tu estudio de Nutrición:</p>
                             <label for="fecha"><strong class="colorasterisco">*</strong>Fecha:</label>
                             <input type="date" name="fecha" id="fecha" class="form-control" required>
                             <label for="hora"><strong class="colorasterisco">*</strong>Hora:</label>
                             <select name="hora" id="hora" class="form-control" required>
-                                <option value="">Select Hour</option>
+                                <option value="" disabled selected>Seleccionar hora</option>
                                 <option value="00:00">00:00</option>
                                 <option value="01:00">01:00</option>
                                 <option value="02:00">02:00</option>
