@@ -61,8 +61,7 @@ finalBtn.addEventListener('click', () => {
     // Cerrar el modal
     const modal = document.querySelector('#exampleModalLabel');
     const modalInstance = bootstrap.Modal.getInstance(modal);
-    modalInstance.hide();
-    
+
     // Reiniciar el modal
     currentStep = 0;
     steps.forEach((step, index) => {
