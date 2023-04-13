@@ -12,22 +12,33 @@ Landing page para Salud Digna dedicado a los servición de nutrición especializ
 
 Hecho por: Jaqueline Castillo, José Muñetón, Daniel Moreno, Araceli Sánchez y Ángel García
 
+## 📷 Screenshots
+![Menu Agendar Cita](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/1-agendarCita.jpeg)
+![Formulario Agendar Cita](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/2-fomularioAgenda.jpeg)
+![Formulario Agendar Cita 2](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/3-fomularioAgenda-2.jpeg)
+![Formulario Agendar Cita 3](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/4-fomularioAgenda-3.jpeg)
+
+![Preguntas Frecuentes](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/1-agendarCita.jpeg)
+
+![Blog Publico](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/6-blog-publico.jpeg)
+![Lista Pacientes](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/7-listaPacientes.jpeg)
+![Blog Editor](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/8-blog-editor.jpeg)
+![Perfil Nutriologo](https://github.com/PepeMP23/NutreT/blob/main/img/ScreenShots/9-perfilNutriologo.jpeg)
+
 ## 💥 Features
 + Búsqueda de profesionales de nutrición por especialidad
 + Acceso a información verificada
 + Asesorías en línea para llegar a mayor población
 
-## 📷 Screenshots
-
 
 ## 💻 Tecnologías
 En el desarrollo de este proyecto se utilizaron las siguientes tecnologías:
-
 + HTML
 + CSS
 + JavaScript
 + Bootstrap
 + PHP
++ JQuery
 
 
 By QuantumTech
